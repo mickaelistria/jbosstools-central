@@ -28,6 +28,12 @@
            class="org.jboss.tools.central.preferences.JBossCentralPreferencePage"
            id="org.jboss.tools.central.preferences.JBossCentralPreferencePage"
            name="JBoss Central"/>
+     <page
+           category="org.jboss.tools.common.model.ui.MainPreferencePage"
+           class="org.jboss.tools.central.community.JBossCommunityPreferencePage"
+           id="org.jboss.tools.central.community.JBossCommunityPreferencePage"
+           name="JBoss.org Community">
+     </page>
    </extension>
 	<extension
 		point="org.eclipse.ui.menus">
@@ -49,6 +55,14 @@
     </menuContribution>
 	<menuContribution
           locationURI="menu:help?before=group.intro">
+    <command
+          commandId="org.jboss.tools.central.report"
+          disabledIcon="$nl$/icons/report_problem.png"
+          icon="$nl$/icons/report_problem.png"
+          id="org.jboss.tools.central.report.menu"
+          label="%jboss.reportProblem"
+          style="push">
+    </command>
        <command
              commandId="org.jboss.tools.central.show"
              disabledIcon="$nl$/icons/jboss.png"
@@ -59,6 +73,9 @@
              tooltip="%jboss.central.menu.name">
            <visibleWhen checkEnabled="false" />
        </command>
+       <menuContribution
+             locationURI="menu:help">
+       </menuContribution>
     </menuContribution>
 </extension>
    <extension
@@ -151,6 +168,11 @@
       		name="Warning"
             id="org.jboss.tools.central.buzzWarning">
       </command>
+      <command
+            defaultHandler="org.jboss.tools.central.reporting.ReportCommandHandler"
+            id="org.jboss.tools.central.report"
+            name="Report Problemaaa">
+      </command>
 
    </extension>
 
@@ -206,6 +228,10 @@
       <image
             commandId="org.jboss.tools.central.newProjectExamplesWizard"
             icon="icons/examples_wiz.gif">
+      </image>
+      <image
+            commandId="org.jboss.tools.central.report"
+            icon="icons/report_problem.png">
       </image>
    </extension>
 
