@@ -34,6 +34,9 @@ public class Messages extends NLS {
 	public static String CommunityPreferences_jbossOrgUsername;
 	public static String CommunityPreferences_jbossOrgPassword;
 	public static String CommunityPreferences_errorStoringCredentials;
+	public static String CommunityPreferences_testCredentials;
+	public static String CommunityPreferences_couldNotAccessJira;
+	public static String CommunityPreferences_CredentialsValid;
 	
 	static {
 		// initialize resource bundle

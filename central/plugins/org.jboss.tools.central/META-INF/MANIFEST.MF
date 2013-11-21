@@ -34,7 +34,8 @@ Require-Bundle: org.eclipse.ui;bundle-version="3.7.0",
  org.eclipse.equinox.p2.director;bundle-version="2.3.0",
  org.eclipse.core.filesystem,
  org.eclipse.equinox.security,
- com.atlassian.jira.rest.client;bundle-version="3.2.2"
+ com.atlassian.jira.rest.client,
+ com.sun.jersey;bundle-version="1.5.0"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-Localization: plugin
